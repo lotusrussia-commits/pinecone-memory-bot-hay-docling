@@ -1,0 +1,12 @@
+services:
+  bot:
+    build: .
+    platform: linux/amd64
+    env_file:
+      - .env
+    volumes:
+      - bot_tmp:/tmp
+    restart: unless-stopped
+
+volumes:
+  bot_tmp:
