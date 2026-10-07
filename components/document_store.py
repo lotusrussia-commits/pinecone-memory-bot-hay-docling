@@ -28,7 +28,7 @@ def openai_base_url() -> str | None:
 
 
 def similarity_threshold() -> float:
-    raw_value = os.getenv("SIMILARITY_THRESHOLD", "0.5")
+    raw_value = os.getenv("SIMILARITY_THRESHOLD", "0.45")
 
     try:
         return float(raw_value)
